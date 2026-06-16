@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap");
+
+:root {
+    --primary: #2f80ed;
+    --primary-dark: #1769d8;
+    --primary-soft: #eaf4ff;
+    --secondary-soft: #f6fbff;
+    --text-dark: #172033;
+    --text-muted: #667085;
+    --border: #dbe8f5;
+    --white: #ffffff;
+    --gold: #f6b93b;
+    --shadow: 0 18px 45px rgba(38, 103, 184, 0.12);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #ffffff;
+    color: var(--text-dark);
+}
+
+.lumiere-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.lumiere-title {
+    font-family: "Playfair Display", serif;
+    letter-spacing: -0.7px;
+    color: #172033;
+}
+
+.lumiere-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(39, 93, 152, 0.08);
+}
+
+.lumiere-card-lg {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    box-shadow: var(--shadow);
+}
+
+.lumiere-btn-primary {
+    background: linear-gradient(135deg, var(--primary), #5aa9ff);
+    color: white;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 13px 22px;
+    box-shadow: 0 12px 30px rgba(47, 128, 237, 0.28);
+    transition: 0.25s ease;
+}
+
+.lumiere-btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.lumiere-btn-outline {
+    background: white;
+    border: 1px solid var(--border);
+    color: #2a4468;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 13px 22px;
+    transition: 0.25s ease;
+}
+
+.lumiere-btn-outline:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.lumiere-input {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 13px 14px;
+    background: white;
+    color: var(--text-dark);
+    outline: none;
+}
+
+.lumiere-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(47, 128, 237, 0.12);
+}
+
+.lumiere-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2a4468;
+    margin-bottom: 8px;
+}
+
+.lumiere-muted {
+    color: var(--text-muted);
+}
+
+.lumiere-section {
+    padding: 58px 0;
+}
+
+.lumiere-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.78);
+    color: var(--primary);
+    border: 1px solid rgba(219, 232, 245, 0.9);
+    border-radius: 999px;
+    font-weight: 800;
+    box-shadow: 0 8px 24px rgba(47, 128, 237, 0.08);
+}
